@@ -15,16 +15,17 @@ In the first example, I have utilized BERT(Bidirectional Encoder Representations
 3) Model/Data should be on the same device for training/inference to happen. cuda() transfers the model/data from CPU to GPU. <br>
 4) Prepares TorchScript modules (torch.jit.trace) for inference on CPU/GPU <br>
 5) Compare the speed of BERT and TorchScript <br>
+6) Save the model in *.pt format which is ready for deployment <br>
 
 ## Results:<br>
 Module <br>
 BERT <br> 
 Latency on CPU (ms): 88.82  <br> 
-Latency on GPU (ms): 18.77   <br>  
+Latency on GPU (ms): 18.77  <br>  
 
 Module <br>
-TorchScript  <br>     
-Latency on CPU (ms): 86.93  <br>
+TorchScript <br>    
+Latency on CPU (ms): 86.93 <br>
 Latency on GPU (ms): 9.32 <br>
 
 ## Conclusion: <br>
